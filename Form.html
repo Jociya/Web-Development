@@ -6,7 +6,74 @@
 <body>
 
 	<form action = "" method = "">
-		<input type = "text" name = "" size = "50">
+	<fieldset>
+	<legend> User Detials </legend>
+		<label for = "firstname"> First Name: </label>
+		<input type = "text" id = "firstname" name = "" size = "50">
+		<br>
+		<label for = "lastname"> Last Name: </label>
+		<input type = "text" id = "lastname" name = "" size = "50">
+		<br>
+		<label for = "comment"> Write a Comment: </label> <br>
+		<textarea rows = "" cols = "60" id = "comment"></textarea>
+
+		<!-- The radio form type is a type of input used to create a selection for that has only
+one choice, the name attribute is used to tie all the buttons together to show that are part of the 
+choice.
+		The value attribute is what gets submitted to the server if when the user select a choice -->
+		
+		<br>
+		<br>
+		<p>Would you like to know my name?</p>
+		<input type = "radio" name = "yesorno" value = "">
+		Yes:
+		<input type = "radio" name = "yesorno" value = "">
+		No:
+		<br>
+		<br>
+
+		<!-- The checkbox form type is a type of input used to recieve multiple option from the user,
+the name attrible is a server side code
+		if you want to force an option to be checked automatically, you can use the checked attribute
+and assign it to "checked" -->
+
+		<input type = "checkbox" name = "" checked = "checked"> Football <br>
+		<input type = "checkbox" name = ""> Hockey <br>
+		<input type = "checkbox" name = ""> Baseball <br>
+		<input type = "checkbox" name = ""> Basketball
+
+		<!-- The number input form type is used to get only numbers from the user, no character, the control has
+an up and down arrow to adjust the inputed value initially 0 to an unlimited value
+		The attribute max and min are used to specify the range of the allowable input number from the user, the size of the
+box depends on the range of values that can be entered by the user -->
+
+		<br>
+		<br>
+		<input type = "number" min = "0" max = "50"> 
+
+		<!-- The select element is used to create a dropdown list, the dropdown list unlike the checkbox list only permit
+one choice. the options are then embedded into the body of the select element as in nested element using the option element 
+		The option tags will allow us to write as option for our user, the value attribute will be treated in the php part of the course, it is importand to keep the value and the option label the same -->
+
+
+		<br>
+		<br>
+		<select>
+			<option value = "Nigeria"> Nigeria </option>
+			<option value = "Cameroon"> Cameroon </option>
+			<option value = "Ghana"> Ghana </option>
+			<option value = "Algeria"> Algeria </option>
+		</select>
+
+<!-- The date input type creates a calendar that we can choose the date from, the name attribute will be explained when we get to php -->
+
+
+		<br>
+		<br> 	
+		Enter the day you what to travel: <input type = "date" name = "day">
+		<br>
+		Number of days: <input type = "number" name = "numdays" min = "0" max = "31">
+	</fieldset>
 	</form>
 </body>
 </html>
